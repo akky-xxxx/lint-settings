@@ -22,7 +22,7 @@
     "fix-ts-by-prettier": "prettier \"./{src,spec}/**/*.{ts,tsx}\" --write",
     "fix:config": "prettier \"./*.{js,json}\" \"./**/*.{js,json}\" !\"./out/**/*\" --write",
     "fix:pack": "fixpack",
-    "fix:ts": "run-s fix-ts-by-eslint fix-ts-by-prettier",
+    "fix:ts": "run-s fix-ts-by-prettier fix-ts-by-eslint",
     "lint": "run-p lint:* -c",
     "lint-ts-by-eslint": "eslint \"./{src,spec}/**/*.{ts,tsx}\"",
     "lint-ts-by-prettier": "prettier \"./{src,spec}/**/*.{ts,tsx}\" --check",
