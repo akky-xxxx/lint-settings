@@ -4,5 +4,10 @@
   "main": "index.js",
   "author": "akky-xxxx <114.s.aki@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "16.17.0",
+    "npm": "use \"yarn\" instead \"npm\"",
+    "yarn": "1.22.19"
+  },
   "private": true
 }
