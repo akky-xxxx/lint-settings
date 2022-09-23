@@ -1,0 +1,37 @@
+{
+  "name": "linters",
+  "author": "akky-xxxx <114.s.aki@gmail.com>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": "16.17.0",
+    "npm": "use \"yarn\" instead \"npm\"",
+    "yarn": "1.22.19"
+  },
+  "main": "index.js",
+  "scripts": {
+    "check-all": "run-p check-all:*",
+    "check-code": "run-p check-code:*",
+    "fix": "run-p fix:* -c",
+    "fix:config": "prettier \"./*.{js,json}\" \"./**/*.{js,json}\" --write",
+    "fix:pack": "fixpack",
+    "lint": "run-p lint:* -c",
+    "lint:editorconfig": "editorconfig-checker",
+    "lint:js": "prettier \"./*.js\" --check",
+    "lint:pack": "fixpack --dryRun",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "editorconfig-checker": "^4.0.2",
+    "fixpack": "^4.0.0",
+    "husky": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
