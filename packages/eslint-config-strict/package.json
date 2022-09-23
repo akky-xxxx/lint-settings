@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "run-s test build:remove build:compile check-code build:staging build:commit",
-    "build:commit": "git commit -m \"chore: build@`date \"+%Y-%m-%d %H:%M:%S\"`\"",
+    "build:commit": "git commit -m \"chore(eslint-config-strict): build@`date \"+%Y-%m-%d %H:%M:%S\"`\"",
     "build:compile": "tsc -p tsconfig.build.json",
     "build:remove": "shx rm -rf ./out",
     "build:staging": "git add ./out",
