@@ -1,3 +1,4 @@
 .husky
 .yarn
 packages/**
+coverage/**
