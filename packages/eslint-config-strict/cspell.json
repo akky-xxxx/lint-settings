@@ -5,7 +5,7 @@
   "dictionaryDefinitions": [
     {
       "name": "packages",
-      "path": "./configs/cspell/packages.txt"
+      "path": "./config/cspell/packages.txt"
     }
   ],
   "ignorePaths": ["node_modules/**"]
