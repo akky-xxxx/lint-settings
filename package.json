@@ -9,6 +9,18 @@
     "npm": "use \"yarn\" instead \"npm\"",
     "yarn": "1.22.19"
   },
+  "scripts": {
+    "check-all": "run-p check-all:*",
+    "check-code": "run-p check-code:*",
+    "fix": "run-p fix:* -c",
+    "fix:config": "prettier \"./*.{js,json}\" \"./**/*.{js,json}\" --write",
+    "fix:pack": "fixpack",
+    "lint": "run-p lint:* -c",
+    "lint:editorconfig": "editorconfig-checker",
+    "lint:js": "prettier \"./*.js\" --check",
+    "lint:pack": "fixpack --dryRun",
+    "prepare": "husky install"
+  },
   "private": true,
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
