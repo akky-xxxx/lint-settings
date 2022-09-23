@@ -1,6 +1,7 @@
 {
   "name": "linters",
   "author": "akky-xxxx <114.s.aki@gmail.com>",
+  "repository": "https://github.com/akky-xxxx/linters.git",
   "version": "1.0.0",
   "license": "MIT",
   "engines": {
@@ -16,8 +17,8 @@
     "fix:config": "prettier \"./*.{js,json}\" \"./**/*.{js,json}\" --write",
     "fix:pack": "fixpack",
     "lint": "run-p lint:* -c",
+    "lint:config": "prettier \"./*.{js,json}\" \"./**/*.{js,json}\" --check",
     "lint:editorconfig": "editorconfig-checker",
-    "lint:js": "prettier \"./*.js\" --check",
     "lint:pack": "fixpack --dryRun",
     "prepare": "husky install"
   },
