@@ -10,3 +10,5 @@ Thumbs.db
 # develop 関連
 node_modules/
 yarn-error.log*
+*.tsbuildinfo
+**/coverage
