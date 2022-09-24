@@ -1,5 +1,5 @@
 {
-  "name": "@linters/eslint-config-strict",
+  "name": "@lint-settings/eslint-config-strict",
   "version": "0.0.1",
   "license": "MIT",
   "main": "index.js",
