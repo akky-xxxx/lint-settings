@@ -16,6 +16,7 @@
     "dry-run": "run-p dry-run:*",
     "dry-run:next": "eslint -c .eslintrc.next.js \"dry-run/next/**/*.{ts,tsx}\"",
     "dry-run:react": "eslint -c .eslintrc.react.js \"dry-run/react/**/*.{ts,tsx}\"",
+    "dry-run:src": "eslint -c .eslintrc.src.js \"src/**/*.ts\"",
     "dry-run:typescript": "eslint -c .eslintrc.typescript.js \"dry-run/typescript/**/*.ts\"",
     "fix": "run-p fix:* -c",
     "fix-ts-by-eslint": "eslint \"./{src,spec}/**/*.{ts,tsx}\" --fix",
