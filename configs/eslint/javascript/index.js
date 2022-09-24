@@ -3,6 +3,7 @@ const { collectiveSetting } = require("../utils/collectiveSetting")
 
 module.exports = {
   rules: {
+    "implicit-arrow-linebreak": Off,
     "max-depth": [Error, 3],
     "max-lines": [Error, { max: 100 }],
     "max-nested-callbacks": [Error, 3],
@@ -11,7 +12,7 @@ module.exports = {
     "no-magic-numbers": Warn,
     "no-undefined": Error,
     "no-unused-vars": Off,
-    "sort-keys": Warn,
+    "sort-keys": [Warn, "asc", { allowLineSeparatedGroups: true }],
     complexity: [Error, 5],
     quotes: [Error, "double", { avoidEscape: true }],
     semi: [Error, "never"],
