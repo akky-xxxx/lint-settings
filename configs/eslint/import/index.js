@@ -1,7 +1,7 @@
 const { OFF, ERROR } = require("../const")
 const { extensions } = require("./configs/extensions")
 const { order } = require("./configs/order")
-import { collectiveSetting } from "../utils/collectiveSetting"
+const { collectiveSetting } = require("../utils/collectiveSetting")
 
 module.exports = {
   rules: {

@@ -1,5 +1,5 @@
 const { OFF } = require("../const")
-import { collectiveSetting } from "../utils/collectiveSetting"
+const { collectiveSetting } = require("../utils/collectiveSetting")
 
 module.exports = {
   plugins: ["sonarjs"],

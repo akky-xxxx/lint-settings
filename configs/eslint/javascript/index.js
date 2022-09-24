@@ -1,5 +1,5 @@
 const { OFF, ERROR, WARN } = require("../const")
-import { collectiveSetting } from "../utils/collectiveSetting"
+const { collectiveSetting } = require("../utils/collectiveSetting")
 
 module.exports = {
   rules: {

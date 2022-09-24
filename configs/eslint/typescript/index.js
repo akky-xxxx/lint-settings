@@ -15,7 +15,7 @@ const { noUnnecessaryCondition } = require("./configs/noUnnecessaryCondition")
 const {
   sortTypeUnionIntersectionMembers,
 } = require("./configs/sortTypeUnionIntersectionMembers")
-import { collectiveSetting } from "../utils/collectiveSetting"
+const { collectiveSetting } = require("../utils/collectiveSetting")
 
 module.exports = {
   parser: "@typescript-eslint/parser",

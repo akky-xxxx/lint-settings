@@ -1,2 +1,2 @@
-export const collectiveSetting = (rules, settingValue) =>
+exports.collectiveSetting = (rules, settingValue) =>
   Object.fromEntries(rules.map((rule) => [rule, settingValue]))
