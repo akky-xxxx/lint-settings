@@ -1,2 +1,2 @@
-const { WARN } = require("../../../const")
-exports.sortTypeUnionIntersectionMembers = [WARN, { checkIntersections: true }]
+const { Warn } = require("../../../const")
+exports.sortTypeUnionIntersectionMembers = [Warn, { checkIntersections: true }]

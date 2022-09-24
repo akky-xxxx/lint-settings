@@ -1,6 +1,6 @@
-const { ERROR } = require("../../../const")
+const { Error } = require("../../../const")
 exports.preventAbbreviations = [
-  ERROR,
+  Error,
   {
     replacements: Object.fromEntries(
       [

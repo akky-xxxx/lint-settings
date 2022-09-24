@@ -1,7 +1,7 @@
-const { ERROR } = require("../../../const")
+const { Error } = require("../../../const")
 
 exports.extensions = [
-  ERROR,
+  Error,
   {
     js: "never",
     ts: "never",

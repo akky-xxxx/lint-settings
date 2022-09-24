@@ -1,2 +1,2 @@
-const { ERROR } = require("../../../const")
-exports.consistentTypeAssertions = [ERROR, { assertionStyle: "never" }]
+const { Error } = require("../../../const")
+exports.consistentTypeAssertions = [Error, { assertionStyle: "never" }]

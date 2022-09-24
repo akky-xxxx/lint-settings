@@ -1,4 +1,4 @@
-const { OFF } = require("../const")
+const { Off } = require("../const")
 const { collectiveSetting } = require("../utils/collectiveSetting")
 
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
       files: ["**/*.{test,stories}.{ts,tsx}", "**/spy{/**,.ts}", "**/spec/**"],
       rules: collectiveSetting(
         ["sonarjs/no-duplicate-string", "sonarjs/cognitive-complexity"],
-        OFF,
+        Off,
       ),
     },
   ],

@@ -1,4 +1,4 @@
-const { OFF, ERROR, WARN } = require("../const")
+const { Off, Error, Warn } = require("../const")
 const { arrayType } = require("./configs/arrayType")
 const {
   consistentTypeAssertions,
@@ -21,19 +21,19 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   rules: {
     "@typescript-eslint/array-type": arrayType,
-    "@typescript-eslint/consistent-indexed-object-style": [ERROR, "record"],
+    "@typescript-eslint/consistent-indexed-object-style": [Error, "record"],
     "@typescript-eslint/consistent-type-assertions": consistentTypeAssertions,
-    "@typescript-eslint/consistent-type-definitions": [ERROR, "type"],
+    "@typescript-eslint/consistent-type-definitions": [Error, "type"],
     "@typescript-eslint/consistent-type-imports": consistentTypeImports,
-    "@typescript-eslint/explicit-module-boundary-types": OFF,
+    "@typescript-eslint/explicit-module-boundary-types": Off,
     "@typescript-eslint/no-confusing-void-expression":
       noConfusingVoidExpression,
     "@typescript-eslint/no-implicit-any-catch": no_implicit_any_catch,
     "@typescript-eslint/no-unnecessary-boolean-literal-compare":
       noUnnecessaryBooleanLiteralCompare,
     "@typescript-eslint/no-unnecessary-condition": noUnnecessaryCondition,
-    "@typescript-eslint/no-unnecessary-type-arguments": WARN,
-    "@typescript-eslint/prefer-string-starts-ends-with": WARN,
+    "@typescript-eslint/no-unnecessary-type-arguments": Warn,
+    "@typescript-eslint/prefer-string-starts-ends-with": Warn,
     "@typescript-eslint/sort-type-union-intersection-members":
       sortTypeUnionIntersectionMembers,
   },
@@ -52,7 +52,7 @@ module.exports = {
           "@typescript-eslint/no-unsafe-call",
           "@typescript-eslint/no-unsafe-member-access",
         ],
-        OFF,
+        Off,
       ),
     },
   ],

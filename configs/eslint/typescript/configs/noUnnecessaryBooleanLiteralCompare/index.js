@@ -1,6 +1,6 @@
-const { WARN } = require("../../../const")
+const { Warn } = require("../../../const")
 exports.noUnnecessaryBooleanLiteralCompare = [
-  WARN,
+  Warn,
   {
     allowComparingNullableBooleansToTrue: false,
     allowComparingNullableBooleansToFalse: false,

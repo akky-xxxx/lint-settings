@@ -1,8 +1,8 @@
-const { WARN } = require("../const")
+const { Warn } = require("../const")
 
 module.exports = {
   plugins: ["eslint-plugin-tsdoc"],
   rules: {
-    "tsdoc/syntax": WARN,
+    "tsdoc/syntax": Warn,
   },
 }
