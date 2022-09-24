@@ -7,7 +7,25 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ["./tsconfig.json"],
   },
-  extends: ["./out/typescript"],
+
+  plugins: ["@typescript-eslint", "jest", "tsdoc", "unicorn"],
+
+  extends: [
+    "prettier",
+    "eslint:recommended",
+    "plugin:unicorn/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "airbnb",
+    "../../configs/eslint/import",
+    "../../configs/eslint/jest",
+    "../../configs/eslint/tsdoc",
+    "../../configs/eslint/unicorn",
+    "../../configs/eslint/javascript",
+    "../../configs/eslint/typescript",
+  ],
   ignorePatterns: ["**/libs/**/*", "**/coverage/**", "**/out/**"],
   reportUnusedDisableDirectives: true,
 }
