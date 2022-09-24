@@ -2,7 +2,6 @@ export = {
   plugins: [
     "@typescript-eslint",
     "jest",
-    "sonarjs",
     "storybook",
     "tsdoc",
     "unicorn",
@@ -21,7 +20,6 @@ export = {
     "plugin:react/jsx-runtime",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:sonarjs/recommended",
     "airbnb",
     "airbnb/hooks",
     "next/core-web-vitals",
@@ -32,7 +30,6 @@ export = {
     "../shared/config/jsx-a11y",
     "../shared/config/react",
     "../shared/config/unicorn",
-    "../shared/config/sonarjs",
     "../shared/config/javascript",
     "../shared/config/typescript",
   ],
