@@ -1,11 +1,5 @@
 export = {
-  plugins: [
-    "@typescript-eslint",
-    "jest",
-    "storybook",
-    "tsdoc",
-    "unicorn",
-  ],
+  plugins: ["@typescript-eslint", "jest", "storybook", "tsdoc", "unicorn"],
 
   extends: [
     "prettier",
