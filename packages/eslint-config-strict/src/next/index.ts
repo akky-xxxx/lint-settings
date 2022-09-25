@@ -1,3 +1,5 @@
+import path from "path"
+
 export = {
   plugins: ["@typescript-eslint", "jest", "storybook", "tsdoc", "unicorn"],
 
@@ -17,14 +19,16 @@ export = {
     "airbnb",
     "airbnb/hooks",
     "next/core-web-vitals",
-    "../shared/config/import",
-    "../shared/config/jest",
-    "../shared/config/storybook",
-    "../shared/config/tsdoc",
-    "../shared/config/jsx-a11y",
-    "../shared/config/react",
-    "../shared/config/unicorn",
-    "../shared/config/javascript",
-    "../shared/config/typescript",
+    ...[
+      "../shared/config/import",
+      "../shared/config/jest",
+      "../shared/config/storybook",
+      "../shared/config/tsdoc",
+      "../shared/config/jsx-a11y",
+      "../shared/config/react",
+      "../shared/config/unicorn",
+      "../shared/config/javascript",
+      "../shared/config/typescript",
+    ].map((configPath) => path.resolve(__dirname, configPath)),
   ],
 }
