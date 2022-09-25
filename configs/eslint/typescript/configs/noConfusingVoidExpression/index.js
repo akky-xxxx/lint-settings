@@ -1,2 +1,2 @@
-const { ERROR } = require("../../../const")
-exports.noConfusingVoidExpression = [ERROR, { ignoreVoidOperator: true }]
+const { Error } = require("../../../const")
+exports.noConfusingVoidExpression = [Error, { ignoreVoidOperator: true }]

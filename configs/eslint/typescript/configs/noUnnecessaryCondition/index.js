@@ -1,6 +1,6 @@
-const { ERROR } = require("../../../const")
+const { Error } = require("../../../const")
 exports.noUnnecessaryCondition = [
-  ERROR,
+  Error,
   {
     allowConstantLoopConditions: false,
     allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing: false,

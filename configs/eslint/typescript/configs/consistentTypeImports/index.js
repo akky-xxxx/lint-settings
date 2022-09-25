@@ -1,3 +1,3 @@
-const { ERROR } = require("../../../const")
+const { Error } = require("../../../const")
 
-exports.consistentTypeImports = [ERROR, { prefer: "type-imports" }]
+exports.consistentTypeImports = [Error, { prefer: "type-imports" }]

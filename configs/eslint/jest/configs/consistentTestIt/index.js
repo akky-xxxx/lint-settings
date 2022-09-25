@@ -1,7 +1,7 @@
-const { ERROR } = require("../../../const")
+const { Error } = require("../../../const")
 
 exports.consistentTestIt = [
-  ERROR,
+  Error,
   {
     fn: "it",
     withinDescribe: "it",

@@ -1,3 +1,3 @@
-exports.OFF = 0
-exports.WARN = 1
-exports.ERROR = 2
+exports.Off = 0
+exports.Warn = 1
+exports.Error = 2

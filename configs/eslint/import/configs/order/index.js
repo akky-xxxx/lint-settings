@@ -1,7 +1,7 @@
-const { ERROR } = require("../../../const")
+const { Error } = require("../../../const")
 
 exports.order = [
-  ERROR,
+  Error,
   {
     "newlines-between": "always",
     alphabetize: { order: "asc" },
