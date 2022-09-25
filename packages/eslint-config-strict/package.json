@@ -1,6 +1,6 @@
 {
   "name": "@lint-settings/eslint-config-strict",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "out/index.js",
   "scripts": {
