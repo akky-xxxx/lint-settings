@@ -9,6 +9,12 @@
   "homepage": "https://github.com/akky-xxxx/lint-settings",
   "license": "MIT",
   "main": "out/index.js",
+  "exports": {
+    ".": "./out/index.js",
+    "./next": "./out/next/index.js",
+    "./react": "./out/react/index.js",
+    "./typescript": "./out/typescript/index.js"
+  },
   "scripts": {
     "build": "run-s test build:remove build:compile check-code build:staging build:commit",
     "build:commit": "git commit -m \"chore(eslint-config-strict): build@`date \"+%Y-%m-%d %H:%M:%S\"`\"",
