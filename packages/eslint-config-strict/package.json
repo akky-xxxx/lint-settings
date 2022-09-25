@@ -31,6 +31,7 @@
     "lint:editorconfig": "editorconfig-checker",
     "lint:pack": "fixpack --dryRun",
     "lint:ts": "run-s lint-ts-by-eslint lint-ts-by-prettier",
+    "pub": "node ../../scripts/publish/index.js eslint-config-strict",
     "spell-check": "cspell \"./{src,spec}/**/*.{ts,tsx}\"",
     "test": "jest --coverage",
     "type-check": "tsc"
