@@ -1,8 +1,8 @@
 {
   "name": "lint-settings",
+  "version": "1.0.0",
   "author": "akky-xxxx",
   "repository": "https://github.com/akky-xxxx/lint-settings.git",
-  "version": "1.0.0",
   "license": "MIT",
   "engines": {
     "node": "16.17.0",
