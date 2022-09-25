@@ -1,13 +1,15 @@
 {
   "sortToTop": [
     "name",
+    "version",
     "description",
     "author",
     "repository",
-    "version",
+    "homepage",
     "license",
     "engines",
     "main",
+    "exports",
     "scripts",
     "dependencies",
     "devDependencies",

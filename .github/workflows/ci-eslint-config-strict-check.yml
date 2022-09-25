@@ -1,4 +1,4 @@
-name: CI@eslint-config-strict
+name: CI@eslint-config-strict-check
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - develop
       - main
     paths:
-      - 'packages/eslint-config-strict/**'
+      - 'packages/eslint-config-strict-check/**'
       - 'yarn.lock'
       - 'configs/**'
   pull_request:
@@ -15,7 +15,7 @@ on:
       - main
       - feature/**
     paths:
-      - 'packages/eslint-config-strict/**'
+      - 'packages/eslint-config-strict-check/**'
       - 'yarn.lock'
       - 'configs/**'
 
@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/eslint-config-strict
+        working-directory: ./packages/eslint-config-strict-check
 
     steps:
       - uses: actions/checkout@v3
@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/eslint-config-strict
+        working-directory: ./packages/eslint-config-strict-check
 
     steps:
       - uses: actions/checkout@v3
@@ -67,7 +67,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/eslint-config-strict
+        working-directory: ./packages/eslint-config-strict-check
 
     steps:
       - uses: actions/checkout@v3
@@ -88,7 +88,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/eslint-config-strict
+        working-directory: ./packages/eslint-config-strict-check
 
     steps:
       - uses: actions/checkout@v3
@@ -109,7 +109,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/eslint-config-strict
+        working-directory: ./packages/eslint-config-strict-check
 
     steps:
       - uses: actions/checkout@v3
