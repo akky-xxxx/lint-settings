@@ -2,7 +2,7 @@
   "name": "@lint-settings/eslint-config-strict",
   "version": "0.0.1",
   "license": "MIT",
-  "main": "index.js",
+  "main": "out/index.js",
   "scripts": {
     "build": "run-s test build:remove build:compile check-code build:staging build:commit",
     "build:commit": "git commit -m \"chore(eslint-config-strict): build@`date \"+%Y-%m-%d %H:%M:%S\"`\"",
