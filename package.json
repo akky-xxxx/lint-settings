@@ -1,8 +1,8 @@
 {
   "name": "lint-settings",
-  "author": "akky-xxxx <114.s.aki@gmail.com>",
-  "repository": "https://github.com/akky-xxxx/lint-settings.git",
   "version": "1.0.0",
+  "author": "akky-xxxx",
+  "repository": "https://github.com/akky-xxxx/lint-settings.git",
   "license": "MIT",
   "engines": {
     "node": "16.17.0",
@@ -12,10 +12,10 @@
   "main": "index.js",
   "scripts": {
     "check-all": "run-p check-all:*",
-    "check-all:eslint-config-strict": "yarn workspace @lint-settings/eslint-config-strict check-all",
+    "check-all:eslint-config-strict-check": "yarn workspace @lint-settings/eslint-config-strict-check check-all",
     "check-all:root": "run-s fix lint",
     "check-code": "run-p check-code:*",
-    "check-code:eslint-config-strict": "yarn workspace @lint-settings/eslint-config-strict check-code",
+    "check-code:eslint-config-strict-check": "yarn workspace @lint-settings/eslint-config-strict-check check-code",
     "check-code:root": "run-s lint",
     "fix": "run-p fix:* -c",
     "fix:config": "prettier \"./*.{js,json}\" \"./**/*.{js,json}\" --write",

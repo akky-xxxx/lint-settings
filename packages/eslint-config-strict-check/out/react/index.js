@@ -1,4 +1,8 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+const path_1 = __importDefault(require("path"));
 module.exports = {
     plugins: [
         "@typescript-eslint",
@@ -24,15 +28,17 @@ module.exports = {
         "plugin:react-hooks/recommended",
         "airbnb",
         "airbnb/hooks",
-        "../shared/config/import",
-        "../shared/config/jest",
-        "../shared/config/storybook",
-        "../shared/config/tsdoc",
-        "../shared/config/jsx-a11y",
-        "../shared/config/react",
-        "../shared/config/unicorn",
-        "../shared/config/javascript",
-        "../shared/config/typescript",
+        ...[
+            "../shared/config/import",
+            "../shared/config/jest",
+            "../shared/config/storybook",
+            "../shared/config/tsdoc",
+            "../shared/config/jsx-a11y",
+            "../shared/config/react",
+            "../shared/config/unicorn",
+            "../shared/config/javascript",
+            "../shared/config/typescript",
+        ].map((configPath) => path_1.default.resolve(__dirname, configPath)),
     ],
 };
 //# sourceMappingURL=index.js.map

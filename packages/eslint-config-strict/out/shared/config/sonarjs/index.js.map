@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../src/shared/config/sonarjs/index.ts"],"names":[],"mappings":";AAAA,uCAAiC;AACjC,qEAAiE;AAEjE,iBAAS;IACP,SAAS,EAAE;QACT;YACE,KAAK,EAAE,CAAC,8BAA8B,EAAE,iBAAiB,EAAE,YAAY,CAAC;YACxE,KAAK,EAAE,IAAA,qCAAiB,EACtB,CAAC,6BAA6B,EAAE,8BAA8B,CAAC,EAC/D,WAAG,CACJ;SACF;KACF;CACF,CAAA"}

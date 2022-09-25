@@ -1,8 +1,20 @@
 {
-  "name": "@lint-settings/eslint-config-strict",
-  "version": "0.0.2",
+  "name": "eslint-config-strict-check",
+  "version": "0.0.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akky-xxxx/lint-settings.git",
+    "directory": "packages/eslint-config-strict"
+  },
+  "homepage": "https://github.com/akky-xxxx/lint-settings",
   "license": "MIT",
   "main": "out/index.js",
+  "exports": {
+    ".": "./out/index.js",
+    "./next": "./out/next/index.js",
+    "./react": "./out/react/index.js",
+    "./typescript": "./out/typescript/index.js"
+  },
   "scripts": {
     "build": "run-s test build:remove build:compile check-code build:staging build:commit",
     "build:commit": "git commit -m \"chore(eslint-config-strict): build@`date \"+%Y-%m-%d %H:%M:%S\"`\"",
@@ -31,8 +43,8 @@
     "lint:editorconfig": "editorconfig-checker",
     "lint:pack": "fixpack --dryRun",
     "lint:ts": "run-s lint-ts-by-eslint lint-ts-by-prettier",
-    "pub": "node ../../scripts/publish/index.js eslint-config-strict",
     "spell-check": "cspell \"./{src,spec}/**/*.{ts,tsx}\"",
+    "tagging": "node ../../scripts/tagging/index.js eslint-config-strict",
     "test": "jest --coverage",
     "type-check": "tsc"
   },
