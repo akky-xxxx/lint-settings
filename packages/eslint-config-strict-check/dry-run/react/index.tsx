@@ -1,9 +1,12 @@
+/* eslint-disable complexity, object-curly-newline */
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Fragment } from "react"
 
 import type { FC, ReactNode } from "react"
 
 type ReactTest1Props = {
+  // eslint-disable-next-line react/boolean-prop-naming
+  bool: boolean
   count: number
   empty: ReactNode
   title: string
@@ -15,7 +18,7 @@ type ReactTest1Props = {
  */
 
 export const ReactTest1: FC<ReactTest1Props> = (props) => {
-  const { count, empty, title } = props
+  const { bool, count, empty, title } = props
   return (
     // eslint-disable-next-line react/jsx-fragments
     <>
@@ -26,6 +29,7 @@ export const ReactTest1: FC<ReactTest1Props> = (props) => {
       <div>{Boolean(count) && title}</div>
       <div>{count ? title : null}</div>
       <div>{count ? title : empty}</div>
+      {Boolean(bool) && "1"}
     </>
   )
 }
