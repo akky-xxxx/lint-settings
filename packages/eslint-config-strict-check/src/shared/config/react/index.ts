@@ -5,6 +5,7 @@ import { jsxNoLeakedRender } from "./options/jsxNoLeakedRender"
 
 export = {
   rules: {
+    "react/boolean-prop-naming": Error,
     "react/function-component-definition": functionComponentDefinition,
     "react/jsx-filename-extension": [Error, { extensions: [".ts", ".tsx"] }],
     "react/jsx-fragments": [Error, "element"],
