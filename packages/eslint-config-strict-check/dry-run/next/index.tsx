@@ -7,7 +7,7 @@ import type { NextPage } from "next"
 
 export const NextTest: NextPage = () => (
   <a href="/Users/shogo/Public">
-    {/* eslint-disable-next-line @next/next/no-img-element */}
+    {/* eslint-disable-next-line @next/next/no-img-element, react/jsx-sort-props */}
     <img src="dry-run/next/index" alt="" />
   </a>
 )

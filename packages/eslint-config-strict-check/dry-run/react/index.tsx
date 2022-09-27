@@ -1,4 +1,4 @@
-/* eslint-disable complexity, object-curly-newline */
+/* eslint-disable complexity, object-curly-newline, no-console */
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Fragment } from "react"
 
@@ -34,12 +34,33 @@ export const ReactTest1: FC<ReactTest1Props> = (props) => {
   )
 }
 
+type JsxSortPropsProps = {
+  age: number
+  callback: () => string
+  isShorthand?: boolean
+  multiline: () => void
+}
+
+const JsxSortProps: FC<JsxSortPropsProps> = () => (
+  <div>jsx-sort-props</div>
+)
+
 // eslint-disable-next-line react/function-component-definition
 export function ReactTest2() {
   return (
     <Fragment>
       <div>1</div>
       <div>2</div>
+      <JsxSortProps
+        // eslint-disable-next-line react/jsx-sort-props
+        multiline={() => {
+          console.log("multiline")
+        }}
+        callback={() => "callback"}
+        // eslint-disable-next-line react/jsx-sort-props
+        isShorthand
+        age={10}
+      />
     </Fragment>
   )
 }
