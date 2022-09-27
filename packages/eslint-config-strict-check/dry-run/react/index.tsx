@@ -24,6 +24,11 @@ export const ReactTest1: FC<ReactTest1Props> = (props) => {
     <>
       <div>1</div>
       <div>2</div>
+      {/* eslint-disable-next-line react/iframe-missing-sandbox */}
+      <iframe
+        src="https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/iframe-missing-sandbox.md"
+        title="title"
+      />
       {/* eslint-disable-next-line react/jsx-no-leaked-render */}
       <div>{count && title}</div>
       <div>{Boolean(count) && title}</div>
