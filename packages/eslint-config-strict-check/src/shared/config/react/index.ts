@@ -8,6 +8,7 @@ export = {
   rules: {
     "react/boolean-prop-naming": Error,
     "react/function-component-definition": functionComponentDefinition,
+    "react/iframe-missing-sandbox": Error,
     "react/jsx-filename-extension": [Error, { extensions: [".ts", ".tsx"] }],
     "react/jsx-fragments": [Error, "element"],
     "react/jsx-no-leaked-render": jsxNoLeakedRender,
