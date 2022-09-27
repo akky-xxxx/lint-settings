@@ -1,4 +1,4 @@
-/* eslint-disable complexity, object-curly-newline, no-console */
+/* eslint-disable complexity, no-console */
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Fragment } from "react"
 
