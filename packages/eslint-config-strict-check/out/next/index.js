@@ -6,7 +6,6 @@ const path_1 = __importDefault(require("path"));
 module.exports = {
     plugins: ["@typescript-eslint", "jest", "storybook", "tsdoc", "unicorn"],
     extends: [
-        "prettier",
         "eslint:recommended",
         "plugin:storybook/addon-interactions",
         "plugin:storybook/recommended",
@@ -21,6 +20,7 @@ module.exports = {
         "airbnb",
         "airbnb/hooks",
         "next/core-web-vitals",
+        "prettier",
         ...[
             "../shared/config/import",
             "../shared/config/jest",

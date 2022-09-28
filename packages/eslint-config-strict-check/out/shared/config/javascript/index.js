@@ -1,6 +1,7 @@
 "use strict";
 const const_1 = require("../../const");
 const collectiveSetting_1 = require("../../utils/collectiveSetting");
+const operatorLinebreak_1 = require("./options/operatorLinebreak");
 module.exports = {
     rules: {
         /* eslint-disable no-magic-numbers */
@@ -15,6 +16,7 @@ module.exports = {
         "no-magic-numbers": const_1.Warn,
         "no-undefined": const_1.Warn,
         "no-unused-vars": const_1.Off,
+        "operator-linebreak": operatorLinebreak_1.operatorLinebreak,
         quotes: [const_1.Error, "double", { avoidEscape: true }],
         semi: [const_1.Error, "never"],
         "sort-keys": [const_1.Warn, "asc", { allowLineSeparatedGroups: true }],
