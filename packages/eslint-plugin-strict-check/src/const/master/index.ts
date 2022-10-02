@@ -13,10 +13,10 @@ export const Master: MasterRecord[] = [
     [Warn, { forbiddenPrefix: "on" }],
   ],
   [
-    "avoidRiskyInputType",
+    "avoid-risky-input-type",
     avoidRiskyInputType,
     [Warn, { riskyValues: ["email", "number", "tel"] }],
   ],
-  ["forbiddenHardCodingHref", forbiddenHardCodingHref, []],
+  ["forbidden-hard-coding-href", forbiddenHardCodingHref, []],
   ["individual-import", individualImport, []],
 ]

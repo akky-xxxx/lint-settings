@@ -12,7 +12,7 @@ export const ReactMaster: MasterRecord[] = [
     [Warn, { forbiddenPrefix: "on" }],
   ],
   [
-    "avoidRiskyInputType",
+    "avoid-risky-input-type",
     avoidRiskyInputType,
     [Warn, { riskyValues: ["email", "number", "tel"] }],
   ],
