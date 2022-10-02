@@ -13,9 +13,11 @@
   "scripts": {
     "check-all": "run-p check-all:*",
     "check-all:eslint-config-strict-check": "yarn workspace @lint-settings/eslint-config-strict-check check-all",
+    "check-all:eslint-plugin-strict-check": "yarn workspace eslint-plugin-strict-check check-all",
     "check-all:root": "run-s fix lint",
     "check-code": "run-p check-code:*",
     "check-code:eslint-config-strict-check": "yarn workspace @lint-settings/eslint-config-strict-check check-code",
+    "check-code:eslint-plugin-strict-check": "yarn workspace eslint-plugin-strict-check check-code",
     "check-code:root": "run-s lint",
     "fix": "run-p fix:* -c",
     "fix:config": "prettier \"./*.{js,json}\" \"./**/*.{js,json}\" --write",
