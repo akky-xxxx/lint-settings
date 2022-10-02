@@ -1,5 +1,6 @@
 import { Error, Off, Warn } from "../../const"
 import { collectiveSetting } from "../../utils/collectiveSetting"
+import { operatorLinebreak } from "./options/operatorLinebreak"
 
 export = {
   rules: {
@@ -15,6 +16,7 @@ export = {
     "no-magic-numbers": Warn,
     "no-undefined": Warn,
     "no-unused-vars": Off, // check by tsc
+    "operator-linebreak": operatorLinebreak,
     quotes: [Error, "double", { avoidEscape: true }],
     semi: [Error, "never"],
     "sort-keys": [Warn, "asc", { allowLineSeparatedGroups: true }],

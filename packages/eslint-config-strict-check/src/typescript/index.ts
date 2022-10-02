@@ -4,7 +4,6 @@ export = {
   plugins: ["@typescript-eslint", "jest", "storybook", "tsdoc", "unicorn"],
 
   extends: [
-    "prettier",
     "eslint:recommended",
     "plugin:unicorn/recommended",
     "plugin:@typescript-eslint/recommended",
@@ -12,6 +11,7 @@ export = {
     "plugin:jest/recommended",
     "plugin:jest/style",
     "airbnb",
+    "prettier",
     ...[
       "../shared/config/import",
       "../shared/config/jest",

@@ -12,7 +12,6 @@ export = {
   ],
 
   extends: [
-    "prettier",
     "eslint:recommended",
     "plugin:storybook/addon-interactions",
     "plugin:storybook/recommended",
@@ -26,6 +25,7 @@ export = {
     "plugin:react-hooks/recommended",
     "airbnb",
     "airbnb/hooks",
+    "prettier",
     ...[
       "../shared/config/import",
       "../shared/config/jest",
