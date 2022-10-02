@@ -11,6 +11,7 @@ module.exports = {
   plugins: ["@typescript-eslint", "jest", "tsdoc", "unicorn"],
 
   extends: [
+    "prettier",
     "eslint:recommended",
     "plugin:unicorn/recommended",
     "plugin:@typescript-eslint/recommended",
@@ -18,7 +19,6 @@ module.exports = {
     "plugin:jest/recommended",
     "plugin:jest/style",
     "airbnb",
-    "prettier",
     "../../configs/eslint/import",
     "../../configs/eslint/jest",
     "../../configs/eslint/tsdoc",

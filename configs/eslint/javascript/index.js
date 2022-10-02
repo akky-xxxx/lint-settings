@@ -1,5 +1,6 @@
 const { Off, Error, Warn } = require("../const")
 const { collectiveSetting } = require("../utils/collectiveSetting")
+const { operatorLinebreak } = require("./configs/operatorLinebreak")
 
 module.exports = {
   rules: {
@@ -12,6 +13,7 @@ module.exports = {
     "no-magic-numbers": Warn,
     "no-undefined": Error,
     "no-unused-vars": Off,
+    "operator-linebreak": operatorLinebreak,
     "sort-keys": [Warn, "asc", { allowLineSeparatedGroups: true }],
     complexity: [Error, 5],
     quotes: [Error, "double", { avoidEscape: true }],
