@@ -17,10 +17,6 @@ export const Master: MasterRecord[] = [
     avoidRiskyInputType,
     [Warn, { riskyValues: ["email", "number", "tel"] }],
   ],
-  [
-    "forbiddenHardCodingHref",
-    forbiddenHardCodingHref,
-    [],
-  ],
+  ["forbiddenHardCodingHref", forbiddenHardCodingHref, []],
   ["individual-import", individualImport, []],
 ]
