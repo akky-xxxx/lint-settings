@@ -39,9 +39,7 @@ export const callExpression: CallExpression = (context) => (node) => {
     },
   } = node
 
-  const [{ targets }] = options
-
-  if (!hasTarget(targets, moduleName)) return
+  if (!hasTarget(options[0].targets, moduleName)) return
 
   report({
     message: getErrorMessage(moduleName, propertyName),
