@@ -1,4 +1,5 @@
 import { getErrorMessage } from "../getErrorMessage"
+import { hasTarget } from "../hasTarget"
 
 import type { MessageIdList, Option } from "../../types"
 import type {
@@ -40,11 +41,7 @@ export const callExpression: CallExpression = (context) => (node) => {
 
   const [{ targets }] = options
 
-  const hasTarget = targets
-    .map((target) => target.toLowerCase())
-    .includes(moduleName.toLowerCase())
-
-  if (!hasTarget) return
+  if (!hasTarget(targets, moduleName)) return
 
   report({
     message: getErrorMessage(moduleName, propertyName),
