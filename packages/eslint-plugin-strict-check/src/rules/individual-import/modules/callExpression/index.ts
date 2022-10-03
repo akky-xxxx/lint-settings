@@ -13,6 +13,7 @@ type CallExpression = (
   context: Context,
 ) => RuleFunction<TSESTree.CallExpression>
 
+// eslint-disable-next-line complexity
 export const callExpression: CallExpression = (context) => (node) => {
   const { options, report } = context
 
