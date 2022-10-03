@@ -37,6 +37,14 @@ export const jsxOpeningElement: JSXOpeningElement = (context) => (node) => {
     },
   } = node
 
+  const [{ targets }] = options
+
+  const hasTarget = targets
+    .map((target) => target.toLowerCase())
+    .includes(moduleName.toLowerCase())
+
+  if (!hasTarget) return
+
   report({
     message: getErrorMessage(moduleName, propertyName),
     node,
