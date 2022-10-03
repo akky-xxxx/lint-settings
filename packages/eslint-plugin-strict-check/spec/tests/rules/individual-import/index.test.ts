@@ -15,11 +15,19 @@ tester.run<MessageIdList, Option[]>("individual-import", individualImport, {
       options: [{ targets }],
     },
     {
+      code: "const result = numbers.map((value) => String(value))",
+      options: [{ targets }],
+    },
+    {
       code: "const changeHandler: ChangeEventHandler = () => {}",
       options: [{ targets }],
     },
     {
       code: "const Component = () => <Fragment>Component</Fragment>",
+      options: [{ targets }],
+    },
+    {
+      code: "const Component = () => <Components.Component>Component</Components.Component>",
       options: [{ targets }],
     },
   ],

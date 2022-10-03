@@ -1,4 +1,5 @@
 import { getErrorMessage } from "../getErrorMessage"
+import { hasTarget } from "../hasTarget"
 
 import type { MessageIdList, Option } from "../../types"
 import type {
@@ -23,10 +24,6 @@ export const identifier: Identifier = (context) => (node) => {
 
   if (node.parent?.type !== "TSQualifiedName") return
 
-  const hasTarget = options[0].targets
-    .map((target) => target.toLowerCase())
-    .includes(node.name.toLowerCase())
-
   const {
     parent: {
       right: { name: propertyName },
@@ -34,7 +31,7 @@ export const identifier: Identifier = (context) => (node) => {
   } = node
   const { name: moduleName } = node
 
-  if (!hasTarget || !propertyName) return
+  if (!hasTarget(options[0].targets, moduleName) || !propertyName) return
 
   report({
     message: getErrorMessage(moduleName, propertyName),
