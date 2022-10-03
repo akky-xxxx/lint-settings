@@ -1,4 +1,5 @@
 import { getErrorMessage } from "../getErrorMessage"
+import { hasTarget } from "../hasTarget"
 
 import type { MessageIdList, Option } from "../../types"
 import type {
@@ -36,6 +37,10 @@ export const jsxOpeningElement: JSXOpeningElement = (context) => (node) => {
       property: { name: propertyName },
     },
   } = node
+
+  const [{ targets }] = options
+
+  if (!hasTarget(targets, moduleName)) return
 
   report({
     message: getErrorMessage(moduleName, propertyName),

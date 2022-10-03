@@ -1,4 +1,5 @@
 import { getErrorMessage } from "../getErrorMessage"
+import { hasTarget } from "../hasTarget"
 
 import type { MessageIdList, Option } from "../../types"
 import type {
@@ -12,6 +13,7 @@ type CallExpression = (
   context: Context,
 ) => RuleFunction<TSESTree.CallExpression>
 
+// eslint-disable-next-line complexity
 export const callExpression: CallExpression = (context) => (node) => {
   const { options, report } = context
 
@@ -37,6 +39,8 @@ export const callExpression: CallExpression = (context) => (node) => {
       property: { name: propertyName },
     },
   } = node
+
+  if (!hasTarget(options[0].targets, moduleName)) return
 
   report({
     message: getErrorMessage(moduleName, propertyName),
