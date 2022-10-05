@@ -39,6 +39,7 @@
     "lint:editorconfig": "editorconfig-checker",
     "lint:pack": "fixpack --dryRun",
     "lint:ts": "run-s lint-ts-by-eslint lint-ts-by-prettier",
+    "predry-run": "yarn build",
     "spell-check": "cspell \"./{src,spec}/**/*.{ts,tsx}\"",
     "tagging": "node ../../scripts/tagging/index.js eslint-config-strict",
     "test": "jest --coverage",
