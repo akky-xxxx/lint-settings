@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../../../src/shared/config/jsx-a11y/options/anchorIsValid/index.ts"],"names":[],"mappings":";;;AAAA,6CAAyC;AAE5B,QAAA,aAAa,GAAG;IAC3B,aAAK;IACL;QACE,OAAO,EAAE,CAAC,aAAa,EAAE,cAAc,CAAC;QACxC,UAAU,EAAE,CAAC,MAAM,CAAC;QACpB,WAAW,EAAE,CAAC,UAAU,EAAE,WAAW,CAAC;KACvC;CACF,CAAA"}
