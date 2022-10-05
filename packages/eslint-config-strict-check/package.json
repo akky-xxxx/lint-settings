@@ -16,8 +16,8 @@
     "./typescript": "./out/typescript/index.js"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "build:watch": "tsc -p tsconfig.build.json --watch",
+    "build": "swc \"./src\" -d \"./out\" --config-file .swcrc",
+    "build:watch": "swc \"./src\" -d \"./out\" --config-file .swcrc --watch",
     "check-all": "run-s fix check-code test",
     "check-code": "run-p dry-run lint spell-check type-check",
     "dev": "run-s build build:watch",
