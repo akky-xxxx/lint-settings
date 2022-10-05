@@ -16,11 +16,11 @@
     "./typescript": "./out/typescript/index.js"
   },
   "scripts": {
-    "build:compile": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json",
     "build:watch": "tsc -p tsconfig.build.json --watch",
     "check-all": "run-s fix check-code test",
     "check-code": "run-p dry-run lint spell-check type-check",
-    "dev": "run-s build:compile build:watch",
+    "dev": "run-s build build:watch",
     "dry-run": "run-p dry-run:*",
     "dry-run:next": "eslint -c .eslintrc.next.js \"dry-run/next/**/*.{ts,tsx}\"",
     "dry-run:react": "eslint -c .eslintrc.react.js \"dry-run/react/**/*.{ts,tsx}\"",
