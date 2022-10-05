@@ -10,11 +10,7 @@
   "license": "MIT",
   "main": "out/index.js",
   "scripts": {
-    "build": "run-s build:remove build:compile build:staging build:commit",
-    "build:commit": "git commit -m \"chore(eslint-plugin-strict-check): output components@`date \"+%Y-%m-%d %H:%M:%S\"`\"",
     "build:compile": "tsc -p tsconfig.build.json",
-    "build:remove": "shx rm -rf ./out",
-    "build:staging": "git add ./out",
     "build:watch": "tsc -p tsconfig.build.json --watch",
     "check-all": "npm-run-all fix -p spell-check type-check -s test",
     "check-code": "run-p spell-check lint type-check",
