@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/modules/getConfigRules/index.ts"],"names":[],"mappings":";;;AAAA,8CAA2C;AAKpC,MAAM,cAAc,GAAmB,CAAC,OAAO,EAAE,MAAM,EAAE,EAAE;IAChE,MAAM,CAAC,QAAQ,EAAE,AAAD,EAAG,OAAO,CAAC,GAAG,MAAM,CAAA;IACpC,OAAO;QACL,GAAG,OAAO;QACV,CAAC,GAAG,cAAM,IAAI,QAAQ,EAAE,CAAC,EAAE,OAAO;KACnC,CAAA;AACH,CAAC,CAAA;AANY,QAAA,cAAc,kBAM1B"}
