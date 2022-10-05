@@ -1,0 +1,12 @@
+.ecrc
+.eslint*
+.prettier*
+config
+coverage
+cspell.json
+dry-run
+jest.config.js
+node_modules
+spec
+src
+tsconfig.*
