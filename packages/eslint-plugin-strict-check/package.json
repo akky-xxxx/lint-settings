@@ -10,8 +10,8 @@
   "license": "MIT",
   "main": "out/index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "build:watch": "tsc -p tsconfig.build.json --watch",
+    "build": "swc \"./src\" -d \"./out\" --config-file .swcrc",
+    "build:watch": "swc \"./src\" -d \"./out\" --config-file .swcrc --watch",
     "check-all": "npm-run-all fix -p spell-check type-check -s test",
     "check-code": "run-p spell-check lint type-check",
     "dev": "run-s build build:watch",
