@@ -16,11 +16,7 @@
     "./typescript": "./out/typescript/index.js"
   },
   "scripts": {
-    "build": "run-s test build:remove build:compile check-code build:staging build:commit",
-    "build:commit": "git commit -m \"chore(eslint-config-strict-check): build@`date \"+%Y-%m-%d %H:%M:%S\"`\"",
     "build:compile": "tsc -p tsconfig.build.json",
-    "build:remove": "shx rm -rf ./out",
-    "build:staging": "git add ./out",
     "build:watch": "tsc -p tsconfig.build.json --watch",
     "check-all": "run-s fix check-code test",
     "check-code": "run-p dry-run lint spell-check type-check",
