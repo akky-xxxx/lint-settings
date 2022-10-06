@@ -2,8 +2,10 @@ name: CD@eslint-config-strict-check
 
 on:
   push:
-    branches:
-      - main
+    branches-ignore:
+      - '**'
+    tags:
+      - 'eslint-config-strict-check/v*'
 
 jobs:
   publish:

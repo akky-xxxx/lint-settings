@@ -2,8 +2,10 @@ name: CD@eslint-plugin-strict-check
 
 on:
   push:
-    branches:
-      - main
+    branches-ignore:
+      - '**'
+    tags:
+      - 'eslint-plugin-strict-check/v*'
 
 jobs:
   publish:
