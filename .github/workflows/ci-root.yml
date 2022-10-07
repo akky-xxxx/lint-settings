@@ -4,8 +4,8 @@ on:
   pull_request:
     branches:
       - develop
-      - main
       - feature/**
+      - main
     paths-ignore:
       - 'packages/**'
 

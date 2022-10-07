@@ -4,13 +4,13 @@ on:
   pull_request:
     branches:
       - develop
-      - main
       - feature/**
+      - main
     paths:
+      - '.github/workflows/ci-eslint-plugin-strict-check.yml'
+      - 'configs/**'
       - 'packages/eslint-plugin-strict-check/**'
       - 'yarn.lock'
-      - 'configs/**'
-      - '.github/workflows/ci-eslint-plugin-strict-check.yml'
 
 jobs:
   check:
