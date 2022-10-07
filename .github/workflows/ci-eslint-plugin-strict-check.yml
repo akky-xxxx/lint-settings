@@ -10,6 +10,7 @@ on:
       - 'packages/eslint-plugin-strict-check/**'
       - 'yarn.lock'
       - 'configs/**'
+      - '.github/workflows/ci-eslint-plugin-strict-check.yml'
 
 jobs:
   lint:
