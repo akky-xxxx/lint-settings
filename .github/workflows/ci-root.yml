@@ -10,7 +10,7 @@ on:
       - 'packages/**'
 
 jobs:
-  lint:
+  check:
 
     runs-on: ubuntu-latest
 
@@ -25,5 +25,5 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile
 
-      - name: Check the codes
+      - name: Run lint
         run: yarn lint
