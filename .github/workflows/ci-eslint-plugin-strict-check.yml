@@ -28,7 +28,7 @@ jobs:
           node-version-file: ./.node-version
 
       - name: Install dependencies
-        run: yarn
+        run: yarn --frozen-lockfile
 
       - name: Check the codes
         run: yarn lint
@@ -49,7 +49,7 @@ jobs:
           node-version-file: ./.node-version
 
       - name: Install dependencies
-        run: yarn
+        run: yarn --frozen-lockfile
 
       - name: Check the codes
         run: yarn spell-check
@@ -70,7 +70,7 @@ jobs:
           node-version-file: ./.node-version
 
       - name: Install dependencies
-        run: yarn
+        run: yarn --frozen-lockfile
 
       - name: Check the codes
         run: yarn type-check
@@ -91,7 +91,7 @@ jobs:
           node-version-file: ./.node-version
 
       - name: Install dependencies
-        run: yarn
+        run: yarn --frozen-lockfile
 
       - name: Check the codes
         run: yarn test

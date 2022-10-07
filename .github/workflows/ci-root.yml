@@ -23,7 +23,7 @@ jobs:
           node-version-file: ./.node-version
 
       - name: Install dependencies
-        run: yarn
+        run: yarn --frozen-lockfile
 
       - name: Check the codes
         run: yarn lint
