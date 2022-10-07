@@ -1,14 +1,6 @@
 name: CI@eslint-plugin-strict-check
 
 on:
-  push:
-    branches:
-      - develop
-      - main
-    paths:
-      - 'packages/eslint-plugin-strict-check/**'
-      - 'yarn.lock'
-      - 'configs/**'
   pull_request:
     branches:
       - develop

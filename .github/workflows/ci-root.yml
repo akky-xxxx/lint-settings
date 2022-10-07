@@ -1,12 +1,6 @@
 name: CI@root
 
 on:
-  push:
-    branches:
-      - develop
-      - main
-    paths-ignore:
-      - 'packages/**'
   pull_request:
     branches:
       - develop
