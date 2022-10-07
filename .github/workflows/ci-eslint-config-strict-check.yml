@@ -1,26 +1,19 @@
 name: CI@eslint-config-strict-check
 
 on:
-  push:
-    branches:
-      - develop
-      - main
-    paths:
-      - 'packages/eslint-config-strict-check/**'
-      - 'yarn.lock'
-      - 'configs/**'
   pull_request:
     branches:
       - develop
-      - main
       - feature/**
+      - main
     paths:
+      - '.github/workflows/ci-eslint-config-strict-check.yml'
+      - 'configs/**'
       - 'packages/eslint-config-strict-check/**'
       - 'yarn.lock'
-      - 'configs/**'
 
 jobs:
-  lint:
+  check:
 
     runs-on: ubuntu-latest
     defaults:
@@ -36,91 +29,19 @@ jobs:
           node-version-file: ./.node-version
 
       - name: Install dependencies
-        run: yarn
+        run: yarn --frozen-lockfile
 
-      - name: Check the codes
+      - name: Run lint
         run: yarn lint
 
-  dry-run:
-
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-strict-check
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version-file: ./.node-version
-
-      - name: Install dependencies
-        run: yarn
-
-      - name: Check the codes
+      - name: Run dry-run
         run: yarn dry-run
 
-  spell-check:
-
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-strict-check
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version-file: ./.node-version
-
-      - name: Install dependencies
-        run: yarn
-
-      - name: Check the codes
+      - name: Run spell-check
         run: yarn spell-check
 
-  type-check:
-
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-strict-check
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version-file: ./.node-version
-
-      - name: Install dependencies
-        run: yarn
-
-      - name: Check the codes
+      - name: Run type-check
         run: yarn type-check
 
-  test:
-
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-strict-check
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version-file: ./.node-version
-
-      - name: Install dependencies
-        run: yarn
-
-      - name: Check the codes
+      - name: Run test
         run: yarn test
