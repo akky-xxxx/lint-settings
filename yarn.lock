@@ -2556,6 +2556,11 @@ eslint-config-prettier@^8.5.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
   integrity sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==
 
+eslint-config-strict-check@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/eslint-config-strict-check/-/eslint-config-strict-check-0.0.7.tgz#7ecb9f6ccb8f90da70b0267182cb3a7181a6ae7f"
+  integrity sha512-sjKV/G4+JRUWt3l4JEE/OBFyOFgOGh9yuFKB3R3554Umrcow/naYuuXSLx5T87B6Ih40RslputnYJvxqT2p+Ew==
+
 eslint-import-resolver-node@^0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.6.tgz#4048b958395da89668252001dbd9eca6b83bacbd"
@@ -2661,6 +2666,11 @@ eslint-plugin-storybook@^0.6.4:
     "@typescript-eslint/experimental-utils" "^5.3.0"
     requireindex "^1.1.0"
     ts-dedent "^2.2.0"
+
+eslint-plugin-strict-check@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-strict-check/-/eslint-plugin-strict-check-0.0.4.tgz#9c1b577afe9ddb7fda8772c9cad0ba667ad971ea"
+  integrity sha512-gWc3DekA9RwrBUFhpgbXPuUsCAJgBwr039DLxbnsgxuhlW+eDK3ugTmwTiDYFyEJEqm6dRGv6tLbMWmpQqgDMQ==
 
 eslint-plugin-tsdoc@^0.2.17:
   version "0.2.17"
