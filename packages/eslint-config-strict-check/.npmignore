@@ -1,7 +1,7 @@
+./config
 .ecrc
 .eslint*
 .prettier*
-config
 coverage
 cspell.json
 dry-run
