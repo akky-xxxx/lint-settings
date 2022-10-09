@@ -2,8 +2,10 @@ name: CD@eslint-config-strict-check
 
 on:
   push:
-    branches:
-      - main
+    branches-ignore:
+      - '**'
+    tags:
+      - 'eslint-config-strict-check/v*'
 
 jobs:
   publish:
@@ -27,7 +29,7 @@ jobs:
           NPM_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
       - name: Install dependencies
-        run: yarn
+        run: yarn --frozen-lockfile
 
       - name: Run lint
         run: yarn lint
