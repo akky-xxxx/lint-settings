@@ -5,7 +5,7 @@
   "repository": "https://github.com/akky-xxxx/lint-settings.git",
   "license": "MIT",
   "engines": {
-    "node": "16.17.0",
+    "node": "16.18.0",
     "npm": "use \"yarn\" instead \"npm\"",
     "yarn": "1.22.19"
   },
